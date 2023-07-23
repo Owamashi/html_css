@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+        <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>Este vídeo está ospedado no meu próprio servidor.</p>
+    <!--Não hospede videos acima de 1080p-->
+    <!--Arquivos em OGV tem pouca compatibilidade em alguns navegadores-->
+    <video width="500" poster="imagens/limao.png" controls>
+        <!--Poster é para colocar uma capa no seu vídeo, witdth é largura.-->
+        <!--A ordem aqui é de total importância-->
+         <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+         <source src="midia/Meu-video.m4v.webm" type="video/mp4">
+         <source src="midia/meu-video.webm.mp4" type="video/webm">
+         <source src="midia/meuvideo.ogv.mp4" type="video/ogg">
+         <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+         <!--M4V é o mais recomendado-->
+    </video>
+    <!--Sempre coloque todos os tipos de vídeos para não ter problema com outros navegadores quando clientes forem acessar seu site-->
+    <!-- Vídeos hospedados dessa maneira (utilizando a tag VIDEOS) podem e vão consumir muito trafégo de dados.-->
+
+     <h1>Inserindo vídeos do Youtube</h1>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <!--Cuidado com direitos autorais-->
+     <!--Para caso você queira por exemplo: Só assinantes vejam o seu site,vídeo você pode utilzar o VIMEO (pago), pois o youtube não irá conseguir te ajudar com isso.-->
+     <h1>Inserindo vídeos do vimeo</h1>
+     <p><a href="https://vime.com/197093965">Reel 2016</a> from <a href="https://vimeo.com/wabbla">Alvise Zennaro</a> on <a href="https://vimeo.com">Vimeo</a></p> <!--Mais privacidade-->
+</body>
+</html>

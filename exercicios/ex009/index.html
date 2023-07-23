@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <!--Listas ordenadas são feita com a Tag OL / OL e dentro de OL você irá utilizar a Tag LI, 'LIST ITEM'-->
+    <ol>
+        <li>acordar
+        <li>ligar para joão
+        <li>tomar café
+        <li>escovar os dentes
+        <li>ir para faculdade
+        <li>ir para o trabalho
+        <li>jantar
+        <li>dormir
+    </ol> <!--Ordered list-->
+    <!--No HTML5 o /LI se torna opcional. Não sendo necessario fechar a tag. Mas caso você não feche a tag, é importante manter o padrão para todo o restante.
+    O /OL é obrigatorio.-->
+    <ol type="i">  
+    <!-- O 'TYPE' é o tipo da sua lista. -->
+    <!--sendo: 1, A, a, I, i --> 
+        <li>acordar</li>
+        <li>ligar para joão</li>
+        <li>tomar café</li>
+        <li>escovar os </li>
+        <li>ir para faculdade</li>
+        <li>almoçar</li>
+        <li>ir para o trabalho</li>   
+        <li>jantar</li>
+        <li>dormir</li>
+    </ol>
+      <h2>Listas Não ordenadas</h2>
+<!--UL também tem tipos, sendo:
+square, disc, circle.-->
+      <ul type="square"> <!--unordered list-->
+         <li>pão</li>
+         <li>leite</li>
+         <li>tomate</li>
+         <li>alface</li>
+         <li>manteiga</li>
+         <li>arroz</li>
+         <li>feijão</li>
+      </ul>
+      <h2>Minhas linguagens favoritas</h2>
+      <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>   
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+      </ol>
+<!--Caso queira começar de algum número, utilize o parametro START após o type (caso tenha type na sua tag OL) e coloque o número que desejar.(START É UM PARAMETRO NÚMERICO, SÓ FUNCIONA COM NÚMEROS) Mas caso você queira que seu TYPE "a" (exemplo) Comece da letra "E" você irá colocar o número que se encontra a letra E sendo assim, o número 5 (Para todas as letras do alfabeto.)-->
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul >
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <!--Você pode utilizar listas ordenadas em listas não ordenadas.-->
+<!--DICA: Para mudar varias tags de uma vez só faça: Clique na TAG que deseja mudar e segure a tecla ALT e vá clicando em outras tags e assim irão ser selecionadas. Assim irá ser mais facil mudar varias tags em vez de 1 por 1
+Essa dica fica em CURSO EM VÍDEO no YT Listas mistas e de definição - @Curso em Vídeo HTML5 e CSS3 6:20--> 
+     <h2>Listas de Definição</h2>
+     <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+     </dl>
+<!--O google da valor para sites que tem listas de definições. (Mas a lista de definição são pouco utilizadas).-->
+<!--  
+    DT :Termo
+    DD:Descrição
+-->
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /*Se você for no navegador agora verá que não está mais ocupando  a largura inteira. Somente a largura que você configurou*/
+            border-width: 10px; /*Largura da borda*/
+            border-style: solid; /*Estilo da borda*/
+            border-color: darkgray; /*Cor da borda*/
+
+            /*você pode configurar todos  os lados do padding
+            Para configurar você também pode seguir uma ordem, Sempre seguindo no sentido de um ponteiro de relogio. Cima, direita, baixo, esquerda*/
+            padding-top: 10px; 
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*Margin auto, fará com que ele centralize horizontalmente (centralizando) se for uma caixa, se for um texto utilize text-align*/
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;     
+            
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon; /*Fora do border e sempre fica dentro da margem*/
+        } 
+    
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            /* Estilos
+            Dashed (pontilhado)
+             double (linha dupla)
+             groove("3D")
+             Dotted (pontilhadinho)
+            */
+            padding-top: 10px; 
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1> <!--box level-->
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exeomplos de caixa inline-level</a>. Vamos ver como tudo isso Funciona.</p>
+<!--Para você poder ver melhor como funciona as caixas do html, vá em seu navegador e inspecione esta pagína, vá em elementos e veja como está configurado automaticamente com USER AGENT, Tudo que está lá você consegue configurar com CSS-->
+    <!--User agent é sempre o seu navegador que está exibindo seu conteudo-->
+
+
+    <!--também é possivel mexer no devtools sem mexer no arquivo original 
+    -->
+</body>
+</html>

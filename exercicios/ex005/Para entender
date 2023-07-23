@@ -1,0 +1,10 @@
+  Níveis hierárquicos seguem a sequência: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+        - Não deve-se pular a sequência;	
+        - Não são usados para definir tamanho da letra. Isso é feito em CSS;
+    
+        <!-- lorem: gerador de texto "lero-lero" -->   
+        - obs:	<p>lorem</p>	Texto de tamanho padrão
+        <p>loremN</p>	N é o nº de palavras que o texto terá.
+    
+<!--Pra quem vai utilizar o "Lorem" (9:45), um macete legal é digitar, após a abertura da tag de parágrafo <p>, o comando "lorem+algumnúmero" (lorem5 por exemplo). Esse número após a palavra lorem representa a quantidade de palavras que você deseja adicionar no parágrafo gerado, ou seja, se você quiser um parágrafo com 10 palavras,
+     é só digitar <p>lorem10</p>, que o resultado será: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, minima. (10 palavras)-->

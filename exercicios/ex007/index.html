@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <!-- sempre embaixo do titulo-->
+    <style>
+        mark {
+            background-color: limegreen; 
+        }
+    </style> <!--Maneira de se mudar varias tags dentro do documento -->
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque </h2>
+     <p>Nessa frase temos um <b>termo em negrito</b> usando a tab B e /B (Não semântica)</p>
+     <p>Nessa frase, tenho um <strong>Termo em Destaque</strong> Usando a Tag STRONG /STRONG (semântica
+     )</p>
+
+     <h2>Itálico / Ênfase</h2>
+     <p>Nesta frase temos um  <i>termo em Itálico</i> usando a tag I e /I (Não semântica).</p>
+     <p>Nesta frase, temos um <EM>termo em Ênfase</EM> usando a Tag EM e /EM (semântica)</p>
+     <h2>Texto Marcado</h2>
+     <p>Podemos também criar <mark style="background-color:lime;">um texto marcado</mark> usando a tag MARK.</p> <!--Codigo individual para mudar a cor da tag-->
+     <p>E no outro parágrafo, temos <mark>Outro texto marcado</mark> no final.</p>
+     <!--Para caso você tenha mais que uma tag MARK, Não se utiliza ''style="background-color"  
+    Se utiliza um codigo para mudar todas as tags MARK (exemplo)  <style> </style> dentro do documento -->
+    <h2>Texto Grande e Pequeno</h2>
+    <p> Estamos  criando um <big>texto grande </big>e um <small>texto pequeno</small> nesse parágrafo</p> <!--Big é uma TAG obssoleta.-->
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins>(semântica) para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também os <U>sublinhado</U> com a tag U e /U (Não semântica).</p>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p> (para cima)
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p> (para baixo)
+
+     
+</body>
+</html>
+<!--Não semântica, Não tem significado somente forma. 
+ B e /B é uma forma. (exemplo)
+-->
+
+<!--Ctrl + Shift + P aonde você gostaria de deixar itálico, irá abrir uma janelinha e você irá clicar em Emmet envelope com abreviatura, se caso não estiver aparecendo,
+escreva Abb, ele automaticamente irá colocar as tags dos dois lados aonde você selecionou. (ENTER PARA CONFIRMAR); -->
+<!---->

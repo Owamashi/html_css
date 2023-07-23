@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Codigo-Fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <!--Codigo fonte são comandos, partes de codigos.-->
+<!--A tag code e /code  É chamada de fonte monoespaçada, é otíma para ler codigos.
+
+é uma fonte tipográfica cujas letras e caracteres ocupam o mesmo espaço horizontal-->
+
+Outros exemplos: 
+    <pre>
+        <code>
+num = int(input('digite um número'))
+if num = % 2 == 0:
+print(f'0 número {num} é PAR)
+else:
+print(f'0 número {num} é ÍMPAR)
+print('Fim do Programa')
+        </code>
+    </pre>
+    <!--PRE /PRE codigo de pré-formatação.-->
+    <!--O codigo PRE /PRE é para que a indentação que ocorre dentro do VisualStudio por exemplo, aconteça e apareça na sua pagina.-->
+    <!--Outra dica: Para caso você não queira que haja tanto espaço você pode selecionar o codigo (sem as tags) e utilizar SHIFT+TAB para ele voltar para o "canto". E caso você queira  novamente dar espaço utilize somente o TAB-->
+
+ <h2>Citações Simples</h2> <!--Sem quebras de linhas-->
+ <p>Como diria o pai de um amigo:<q> O computador é um burro muito rápido.</q></p>
+ <!--a tag Q e /Q é uma tag de citação.-->
+ <h2>Citações Completas</h2>
+ <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+  <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&hl=pt-BR&sa=X&ved=
+  0ahUKEwjH5-PevNboAhVNIbkGHcoxCOgQ6AEIOjAC#v=onepage&q=HTML&f=false">
+  <!--Não irá aparecer nada no seu site quando se utiliza "CITE", mas os mecanismos de busca do google irá saber que a parte interna do seu site essa frase está referenciando um livro que estará disponviel nesse link a cima. (exemplo), no caso irá utilizar CITE para dar os direitos daquele conteudo, daquela citação.-->
+    A diferença  entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+  </blockquote>
+  <!--Uma blockquote, irá aparecer deslocada horizontalmente, É uma citação para determinados assuntos. -->
+  <!--Dentro do blockquote você  pode utilizar o "cite", Que CITA por exemplo, o elemento do livro na qual foi retirado a "citação" acima-->
+  <h2>Abreviações</h2>
+  <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou Adorando!</p>
+  <!--A tag ABBR é para fazer abreviações, como mostra acima.-->
+
+ <h2>Texto Invertido</h2>
+ <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <!--"RTL" right to left, LTR left to right.
+    Basicamente uma tag inutíl.-->     
+ </html>
+

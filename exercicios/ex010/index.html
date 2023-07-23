@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body> 
+    <h2>Usando links externos</h2>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositorio publico no GitHub</a>:</p>
+    <!--Sempre que for utilizar _blank, sempre em minusculo e sem espaço.
+    _blank vai abrir o link em uma nova janela em branco. Sempre utilize os dois parametros, target e rel.-->
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">canal canal gratuito do youtube</a></p>
+<!--tag  href, que cria uma referência hipertexto
+Note que dentro do atributo href, o que colocamos foi uma URL completa para outro
+site. 
+hreflang:permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação-->
+  <h1>Usando links Internos</h1>
+  <p>Está é a primeira página do site. Se você quiser pode acessar também a minha <a href="pag002.html" rel="next" target="_self">Segunda página</a></p>
+<!--Next, para proximo.-->
+
+  <!--Se você utilizar o CTRL + Espaço, o visual studio irá lhe mostras as páginas de codigo que você tem.
+Links internos não são necessarios indicar a URL inteira. Contanto QUE, ambos compartilhem da mesma pasta.-->
+<p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p> 
+<!--_‣ _self vai abrir o link na janela ou frame atual (padrão) .-->
+<!--Você tem que informar o caminho caso ele esteja em uma nova pasta.-->
+<h1>Usando links para dowloads</h1>
+<ul>
+    <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.pdf" type="application.pdf">Baixar o livro em PDF</a></li>
+    <!--Dependendo do navegador ele irá fazer download do arquivo em vez de abri-lo-->
+    <li><a href="livro/10 ligacoes em todas as partes.zip" download="ligacoes em todas as partes.zip" type="application.zip">Livro compactado em zip</a></li>
+</ul>
+
+</body>
+</html>

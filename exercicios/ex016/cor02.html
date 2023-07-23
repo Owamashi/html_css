@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <!--style sempre dentro da area do head-->
+    <style>
+     * {  /*configurações globais das CSS*/
+       height: 100%; 
+        }
+
+          body {
+          background-image: -moz-linear-gradient(to right, white 10% to blue);
+          background-attachment: fixed;
+          /*Também se pode utilizar a % de cor que você queira que apareça*/
+          /*Também se é possivel fazer um gradiente 'RADIAL' utilizando  exemplo: radial-gradient(circle)*/
+          /*Pode se utilizar também em GRAUS para definir de que direção o efeito aconteça por exemplo: 45deg (deg sempre minusculo)*/
+          }
+    </style>
+    <!--No background image você tem que indicar a direção que quer o gradiente e a cor-->
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>
