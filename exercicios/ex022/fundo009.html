@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            /*Todo posiocnamento de um box é posicionamento relativo*/
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+                /*RELATIVO*/
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {/*ABSOLUTO*/
+            /*Todo que está de fora (container) tem posicionamento relativo e o que está dentro(conteudo) é absoluto*/
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /*translação para mover o conteudo (translate) Esse é o passo para centralizar verticamente*/
+            transform: translate(-50%, -50%); /*não esqueça a virgula*/
+            /*transform: translate(+20px, -20px);*/
+                 /*
+                  Negativo > esquerda
+                  Positivo > Direita 
+                  Negativo 2 > Baixo
+                  Positivo 2 > Cima
+                  */
+            left: 50%;
+            top: 50%
+        }
+
+    </style>
+</head>
+<body>
+    <!--Quando você for centralizar verticalmente, você tem que ter a caracteristica de um container e de um conteudo. -->
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
