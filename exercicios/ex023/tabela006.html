@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+
+            <!--Tag de expanção 'colspan' o 2 é para informar o numero de colunas-->
+            <!--Nesse caso a célula B irá ocupar DUAS COLUNAS e não duas linhas.-->
+
+       <!--Por exemplo cada td é uma celula. Se você quer que a Célula B ocupe 2 colunas (no lugar da célula C) você irá utilizar uma 'expanção', existem dois tipos de expanção, uma em forma de coluna e outra em forma de linha.-->
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <!--Rowspan, numero de linhas que irá ocupar.-->
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            
+        </tr>
+        <tr>
+          
+            <td colspan="2">K</td>
+        </tr>
+
+    </table>
+</body>
+</html>
