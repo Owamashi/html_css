@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Caixas de texto / senha </title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <!--para indicar por exemplo que cada campo é o que é, para o 'autocomplete' funcione adequadamente precisa colocar o autocomplete dentro do input.-->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="nome de usuário" autocomplete="username">
+            <!--Min e max é para definir quantas letras no minimo tem que ter o mesmo vale para o maximo-->
+            <!--placeholder é para indicar o que será escrito na caixa e logo quando o usuário colocar uma letra ele irá sumir. é tipo uma 'dica'-->
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" size="10" autocomplete="current-password">
+            <!--Apesar de visualmente parecer igual os inputs, quando se digita por exemplo no password a senha não aparece, aparece como 'bolinhas'-->
+            <!--Required é para que não envie quando estiver vazio -->
+            <!--Size é para quantas letras ele vai mostrar por vez -->
+            <!--current-password é para senhas que já foram registradas(senha atual). e new-passoword é para senhas novas, para criar uma senha-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

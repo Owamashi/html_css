@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off" >
+        <p><label for="inome">Nome: </label>
+            <!--Utilidade do label é fazer uma ligação com input-->
+            <input type="text" name="Nome" id="inome"> </p>
+        <p><label for="isobrenome">Sobrenome: </label> <!--Label (etiqueta) O for="" é para você colocar o id na qual ela vai se relacionar, no nome por exemplo você irá colocar inome, como está sendo mostrado.-->
+
+            <!--Você precisa em todo formulário relacionar o seu 'label' com o seu 'input (controle)' por que se não você dificulta os mecanismos de busca, o seu navegador para saber qual caixa está relacionada com qual label.-->
+            <input type="text" name="Sobrenome" id="isobrenome"> </p>
+            
+            <p><input type="submit" value="Enviar"> </p>
+                <!--Submit (enviar), para dar 'nome' ao seu 'submit' você coloca em 'value=" "' a palavra que deseja. --> 
+    </form>
+</body>
+</html>

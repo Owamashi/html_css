@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários / get </title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php"  method="get" >
+        <!--get é o metodo que coloca na url os 'dados'
+            post não mostra na url a informação, isso não significa que está 'seguro', ainda dá para capturar os dados dos visitantes do seu site se olhar dentro do cabeçalho da emissão dos dados, para proteger esses dados precisa criptografar esses dados e para fazer isso precisa se utilizar https que é outro protocolo de proteção de dados.    
+        -->
+
+        <!--Então qual usar? get ou post? 
+            GET: Quando seus dados não forem sensíveis. (nome da pessoa, peso.) nunca usar quando for (número de cartão de crédito, senhas, endereços).
+                GET tem um limite. Só pode ser enviar 3mil bytes.
+                se ultrapassar isso o get não é o metodo para seu site.
+                3 mil bytes (=3mil letras)
+                outra situação não poder usar o get para envio de fotos ou qualquer outro tipo de arquivo no seu formulário.
+            POST: dados sensíveis (mas o ideal é trabalhar com https);
+            Quando se passar de 3mil bytes se utiliza o post e por fim, envio de arquivos se utilizar o post também.
+
+        -->
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="Nome" id="inome"> </p>
+        <p><label for="isobrenome">Sobrenome: </label> 
+            <p><input type="submit" value="Enviar"> </p>
+              
+    </form>
+</body>
+</html>
