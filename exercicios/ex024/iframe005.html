@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo no iframe por código</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            background-color: skyblue;
+            display: block; /*Display block porque o iframe é inline, sem isso o margin não iria conseguir centralizar ele no meio da tela*/
+            margin: auto; /*Auto para centralizar*/
+        }
+    </style>
+</head>
+<body>
+    <h1>teste iframe</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At deleniti quisquam accusamus quas, quae consectetur, aperiam consequatur iusto culpa quasi doloremque cumque perspiciatis blanditiis. Officia impedit quos et illo ipsa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas voluptate adipisci earum enim sint autem animi modi, doloremque tenetur dolores? Quas, sapiente id doloribus sed inventore officiis molestias rem fugit?</p>
+
+
+                                            <!--com SRCDOC é possível utilizar HTML-->
+    <iframe src="pagina-extras/pagina001.html" frameborder="0" srcdoc="<h1>Escolha uma das opções acima </h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sequi doloribus mollitia alias ut molestias magni eaque! Provident asperiores nostrum a, dolorum, excepturi tempora, illo sequi error veniam explicabo natus!</p> <img src='imagens/cursoemvideo.png'>"> 
+        <!--Não esqueça que como o conteudo está dentro de aspas duplas, o img tem que ser colocado em aspas simples.-->
+        <!--basta colocar o caminho da pasta.-->
+        <p class="erro">Infelizmente seu navegador não é compatível com isso!</p> <!--class para você poder personalizar o 'erro'-->
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At deleniti quisquam accusamus quas, quae consectetur, aperiam consequatur iusto culpa quasi doloremque cumque perspiciatis blanditiis. Officia impedit quos et illo ipsa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas voluptate adipisci earum enim sint autem animi modi, doloremque tenetur dolores? Quas, sapiente id doloribus sed inventore officiis molestias rem fugit?</p>
+</body>
+</html>
+

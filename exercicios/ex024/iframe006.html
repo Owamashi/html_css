@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus perspiciatis neque unde architecto amet consequatur sint veritatis culpa. Amet voluptatem veniam eum molestiae! Dolores, nulla! Minima esse consequuntur aliquam?</p>
+
+    <iframe src="pagina-extras/pagina004.html" frameborder="0" sandbox="sandbox" referrerpolicy="">
+        <!--Tudo que estiver em 'sandobox='sandbox' irá bloqueear todo e qualquer acesso que outros sites que estiverem dentro do iframe tentem fazer-->
+
+        <!--com sandbox='sandbox' você não estará capturando nenhum tipo de informação, assim seu iframe ficará mais seguro-->
+
+        <!--referrerpolicy= politica de referencia, 
+        no-referer-when-downgrade é o valor padrão.  
+        se quer tornar o que estiver dentro do iframe um pouco mais limitado é só colocar no-referrer. irá fazer o seguinte: Você diz o seguinte, o que estiver sendo carregado dentro do iframe  não vai coletar nenhum tipo de informação do usuario
+        
+        ambos sandbox e n-referrer irá ligar o maximo de segurança dentro do seu iframe, porém caso você queira que seu iframe pegue algumas informações de usuarios, você tem que ligar algumas configurações de sanbox. Como o iframe está mostrando um mesmo 'site' que esta na mesma origem que o original basta utilizar allow-same-origins. (permitir configurações da mesma origem) e allow-scripts, você irá permitir scripts e allow-forms irá permitir formularios (você pode utilizar varias configurações de sandbox)
+        -->
+        Seu navegador não é compatível com isso..
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe consequuntur sit ab vel accusantium, vitae aut quia? Iusto magnam omnis, aliquam qui ducimus est velit architecto debitis voluptates quidem.</p>
+</body>
+</html>

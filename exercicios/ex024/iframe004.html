@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iusto cumque expedita quae sapiente saepe aliquam corporis, facere voluptatibus accusamus dolorum quibusdam autem quo blanditiis, officiis eos atque libero consectetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias accusantium porro possimus hic impedit minus ab laboriosam sint aliquid numquam? Voluptates nobis rerum necessitatibus est dolore unde quasi animi in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora quisquam at consequuntur ex magni iure animi numquam nihil ipsa et eum dolorum accusantium cupiditate sapiente nesciunt, modi dolorem molestiae?</p>
+
+    <ul> <!--Para você fazer com que esse link apareça dentro do iframe, você precisa fazer uma configuração no iframe. veja:-->
+        <li><a href="pagina-extras/pagina001.html" target="frame">Primeira Página</a></li>
+         <!--no lugar de target _blank por exemplo, você irá colocar o name que você colocou no seu frame.-->
+        <li><a href="pagina-extras/pagina002.html" target="frame">Segunda Página</a></li>
+        <li><a href="pagina-extras/pagina003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iusto cumque expedita quae sapiente saepe aliquam corporis, facere voluptatibus accusamus dolorum quibusdam autem quo blanditiis, officiis eos atque libero consectetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias accusantium porro possimus hic impedit minus ab laboriosam sint aliquid numquam? Voluptates nobis rerum necessitatibus est dolore unde quasi animi in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora quisquam at consequuntur ex magni iure animi numquam nihil ipsa et eum dolorum accusantium cupiditate sapiente nesciunt, modi dolorem molestiae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quae, optio libero fuga necessitatibus assumenda velit, veniam rerum eos ad ipsum? Nam ab sint saepe ullam ipsum ut reprehenderit voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, dolorem obcaecati assumenda voluptas rerum, eligendi alias dolorum ipsam numquam repudiandae ratione eum architecto velit perferendis sit nisi? Ratione, debitis cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi et accusantium similique optio laboriosam veritatis, consectetur cum nemo blanditiis ipsam error expedita, suscipit commodi ducimus facilis quia quaerat totam? Culpa.</p>
+        <!--A configuração que precisa fazer é colocar um NAME no iframe. (o id é opcional, mas o name é obrigatorio)-->
+    <iframe src="" frameborder="1" id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolorum. Consequuntur eum adipisci fugit. Architecto delectus libero itaque excepturi doloribus. Qui odit atque porro cumque maiores! Illo facere dolore architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam inventore eaque cum voluptatibus atque ipsam officiis sunt laudantium nihil cupiditate ipsum, error, ut est. Minus nobis distinctio consequatur repudiandae? A.</p>
+</body>
+</html>
