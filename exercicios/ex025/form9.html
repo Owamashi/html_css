@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento output em formulários HTML</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="in1">Número 1: <label> 
+          <!--Dentro do oninput é preciso ter cuidado para fazer exatamente igual-->
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+                <!--É preciso colocar as duas linhas de oninput para que quando se alterasse o de cima ou  de baixo a conta fosse feita.-->
+        <p>      
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!--Isso já é JAVASCRIPT-->                                                 <!--É facil de entender, Isoma (id) inner.HTML (html que está dentro do output) sendo eles o n1 e n2-->
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+             <!--O output não é para calcular e nem enviar nada, é simplesmente só para calcular e mostrar coisas na tela-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="icor">Cor:</label>
+            <!--Sempre teste os componentes de formulários pois alguns navegadores não irão funcionar e acabar colocando uma caixa de texto no lugar-->
+            <input type="color" name="Cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="3">
+            <!--min e max aqui serve para você configurar o 'salto' da bolinha, padrão vai de 0-100, mas se colocar min e max ele irá mudar. O mesmo vale para Value que se colocado aqui ele irá iniciar naquele valor.-->
+        </p>
+        <p>
+            <label for="ifoto">Foto do Perfil: </label><input type="file" name="foto" id="ifoto">
+            <!--quando se utilizar input de envio de arquivos (file) não se pode utilizar o metodo GET tem que usar o metodo post-->
+            <!--O file o 'visitante' do seu site pode escolher que foto irá ser colocada, O image não. (você desenvolvedor que irá colocar)-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

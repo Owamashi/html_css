@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, datalist e textarea em HTML</title>
+</head>
+<body>
+    <h1>Exemplo de  Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado</label> <!--Label Elemento-->
+            <select name="Estado" id="iest">
+
+                <option value="" selected>--- Escolha ---</option>
+                <!--Muitos deixam assim para que funcione igual um  placeholder, vazio com selected.-->
+                <optgroup label="Região Sudeste"> <!--Label atributo-->
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="SP" >São paulo</option>
+                </optgroup>
+                <!--Você também pode utilizar optgroup para seu datalist, mas não está funcionando atualmente-->
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+                <!--Agora caso não tenha na lista e você queira criar / escrever outro:-->
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstproft">
+            <!--Em profissões você quer que apareça uma lista, como faz?Primeiro colocar um Id para datalist. e usará 'LIST' e colocará o nome da id da datalist-->
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <!--Você pode tirar o value, para que apareça somento o nome-->
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <!--Para que o usuario envie uma mensagem é preciso criar um text-area-->
+            <textarea name="msg" id="imsg" cols="30" rows="10"> Sua mensagem.. </textarea> <!--Quando se utilizar textarea o ideal é utilizar o metodo post.--> 
+            <!--Tudo que colocado em <textarea> é escritoaté mesmo comentarios.</textarea>-->
+            <!--
+                Cols = colunas rows = linhas
+                Não existe um maximo (textarea é infinito)
+                -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
