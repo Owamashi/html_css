@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*Estilos para impressora*/
+/*visualmente não acontece nada, mas quando se imprime ele irá mudar o formato, fonte e entre outras coisas, para ficar diferente do 'original' do site, retirando links e tudo mais para que na impressão fique somente informações utéis e faceis de ler*/
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em; /*espaçamento entre linhas*/
+}
+
+menu { /*se tiver mais de um menu, especificar com ID*/
+    display: none; /*Display none significa que não será exibido*/
+}
+
+article {
+    width: 100%;
+}
+
+article::after { /*Depois do artigo*/
+    content: 'Esse aritgo foi impresso através do site www.cursoemvideo.com';
+}
