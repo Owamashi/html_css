@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+ /* Typical devidce Breakpoints do w3c
+
+    Pequenas Telas até 600px
+    -------------------------
+    celular: de 600px 768px
+    tablet: 768px até 992px
+    desktop: 992px até 1200px
+    tv: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) {
+    i#icone {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+    
+    main {
+        width: 768px;
+    }
+}
