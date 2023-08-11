@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* Todas as Demais Mídias */
+
+
+ /* Typical devidce Breakpoints do w3c
+
+    Pequenas Telas até 600px
+    -------------------------
+    celular: de 600px 768px
+    tablet: 768px até 992px
+    desktop: 992px até 1200px
+    tv: acima de 1200px
+
+*/
+@media print {
+    
+}
+/* Como já foi feito as configurações no media-all você não precisa fazer elas novamente aqui individualmente. (celular)
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+}
+*/
+
+@media print { /* Impressão */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* desnecessario*/
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) { /* Tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+img#phone { display:none; } /* display none é para que não apareçam*/
+img#tablet { display: block; }
+img#print { display: none; }
+img#pc { display: none; }
+img#tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Desktop */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+img#phone { display:none; } /* display none é para que não apareçam*/
+img#tablet { display: none; }
+img#print { display: none; }
+img#pc { display: block; }
+img#tv { display: none; }
+}
+
+
+@media screen and (min-width: 1200px) { /* Grandes Telas */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+img#phone { display:none; } /* display none é para que não apareçam*/
+img#tablet { display: none; }
+img#print { display: none; }
+img#pc { display: none; }
+img#tv { display: block; }
+
+}

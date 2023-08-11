@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Verão Mobile First */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
+}
+
+body {
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* se você quer que cada um tenha uma configuração individual você tem que dar um id*/
+
+main {
+    background-color: rgba(255, 255, 255, 0.842) ;
+    width: 400px; 
+    margin: auto; /* para centralizar */
+    margin-top: 20px;
+    border-radius: 10px; /* arrendondar as bordas*/
+    padding: 10px; /* para ter um espacinho */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+}
+
+img  {
+    display: block;
+    margin: auto;
+}
+
+img#phone { display:block; } /* display none é para que não apareçam*/
+img#tablet { display: none; }
+img#print { display: none; }
+img#pc { display: none; }
+img#tv { display: none; }
+
+
